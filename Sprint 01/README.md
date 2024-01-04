@@ -1,4 +1,4 @@
-# Relatório
+# Relatório da Sprint 1
 A primeira sprint foi composta por dois cursos obrigatórios entitulados **Linux para Desenvolvedores (c/ terminal, Shell, Apache e +)** e **Git e GitHub do básico ao avançado (c/ gist e GitHub Pages)**. Apesar de não ter experiências profissionais na área, eu tive contato prévio com o Linux e com o Git e GitHub através de alguns bootcamps que participei. Os relatos a seguir dizem respeito ao meu aprendizado e minhas anotações durante essa primeira jornada.
 
 ### Linux

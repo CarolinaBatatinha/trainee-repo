@@ -8,24 +8,24 @@ Como amante da tecnologia, dou o meu melhor nos estudos, buscando compreender e 
 1. [Sprint 1](Sprint%2001/README.md)  
    
     Nesta primeira sprint foram concluídos os cursos abaixo:  
-      * Linux para Desenvolvedores (c/ terminal, Shell, Apache e +);
-      * Git e GitHub do básico ao avançado.  
+      - [x] Linux para Desenvolvedores (c/ terminal, Shell, Apache e +);
+      - [x] Git e GitHub do básico ao avançado.  
   
-2. [Sprint 2](Sprint%2002/README.md)
+2. [Sprint 2](Sprint%2002/README.md)  
+   
+    Conclusão dos cursos e resolução de exercícios dos materiais descritos abaixo:
+    - [x] Big Data Fundamentos 3.0;
+    - [x] SQL para Análise de Dados: Do básico ao avançado. 
+
 3. [Sprint 3](Sprint%2003/README.md) 
 4. [Sprint 4](Sprint%2004/README.md) 
 5. [Sprint 5](Sprint%2005/README.md) 
 6. [Sprint 6](Sprint%2006/README.md) 
 7. [Sprint 7](Sprint%2007/README.md) 
 8. [Sprint 8](Sprint%2008/README.md) 
-9. [Sprint 9](Sprint%2009/README.md) 
+9.  [Sprint 9](Sprint%2009/README.md) 
 10. [Sprint 10](Sprint%2010/README.md)  
 
-## Desafio
+## Desafios
 
-Indisponível na sprint 1.
-
-
-## Dicas
-
-- [Como usar o Markdown para escrever a documentação | Adobe Experience Cloud](https://experienceleague.adobe.com/docs/contributor/contributor-guide/writing-essentials/markdown.html?lang=pt-BR)
+A serem disponibilizados
