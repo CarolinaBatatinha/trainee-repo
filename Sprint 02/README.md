@@ -103,7 +103,7 @@ Sobre **Data Mesh**: diz respeito a uma nova abordagem para projetar e desenvolv
 **Data Lakes** usam **ELT* (extract, load, transform)**.
 
 ## SQL para Análise de Dados
-Aqui o bicho vai pegar, viu?! Não se esqueça de pegar evidências de tudo!!
+Para o módulo de "SQL para Análise de Dados" não requerida a apresentação de resumo, sendo obrigatória a conclusão dos exercícios junto com o envio dos arquivos .sql e a apresentação dos certificados de conclusão.
 
 
 # Exercícios  
@@ -128,7 +128,8 @@ O curso de SQL trouxe os seguintes exercícios:
     - [x] [exercício 14](exercicios/sql/secao_4_loja/ex14/ex14.sql)
     - [x] [exercício 15](exercicios/sql/secao_4_loja/ex15/ex15.sql)
     - [x] [exercício 16](exercicios/sql/secao_4_loja/ex16/ex16.sql)
-  * [Caso de Estudo: Loja](exercicios/sql/secao_6_exercicios_II/)
+  
+  * [Tarefas - Exercícios II](exercicios/sql/secao_6_exercicios_II/)
 
     - [x] [tarefa 1 - arquivo .CSV](exercicios/sql/secao_6_exercicios_II/tarefa_1.csv)
     - [x] [tarefa 1 - arquivo .SQL](exercicios/sql/secao_6_exercicios_II/tarefa_1.sql)
