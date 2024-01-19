@@ -17,7 +17,10 @@ Como amante da tecnologia, dou o meu melhor nos estudos, buscando compreender e 
     - [x] Big Data Fundamentos 3.0;
     - [x] SQL para Análise de Dados: Do básico ao avançado. 
 
-3. [Sprint 3](Sprint%2003/README.md) 
+3. [Sprint 3](Sprint%2003/README.md)
+   
+    - [x] Estudos em Python, do básico ao avançado
+  
 4. [Sprint 4](Sprint%2004/README.md) 
 5. [Sprint 5](Sprint%2005/README.md) 
 6. [Sprint 6](Sprint%2006/README.md) 
