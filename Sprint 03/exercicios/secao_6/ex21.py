@@ -15,11 +15,14 @@
 # Piu Piu
 
 class Passaro:
+    
+    def __init__(self,nome):
+        self.nome = nome
     def voar(self):
         print('Voando...')
 
     def emitir_som(self):
-        print('Pato emitindo som...')
+        print(f'{self.nome} emitindo som...')
 
 
 class Pato(Passaro):
@@ -34,12 +37,12 @@ class Pardal(Passaro):
         print('Piu Piu')
 
 
-pato = Pato()
+pato = Pato('Pato')
 print('Pato')
 pato.voar()
 pato.emitir_som()
 
-pardal = Pardal()
+pardal = Pardal('Pardal')
 print('Pardal')
 pardal.voar()
 pardal.emitir_som()
