@@ -1,5 +1,5 @@
 # Relatório da Sprint 4
-Fizeram parte da quarta sprint a conclusão do curso de Python entitulado "Python 3 - Curso Completo do Básico ao Avançado", onde foi tratado sobre a programação 
+Fizeram parte da quarta sprint a conclusão do curso de Python entitulado "Python 3 - Curso Completo do Básico ao Avançado" (*onde foi tratado sobre a programação funcional*), **Docker para Desenvolvedores (*com Docker Swarm e Kubernetes*)** e **Estatística Descritiva com Python**.
 
 ## Programação Funcional com Python
 
