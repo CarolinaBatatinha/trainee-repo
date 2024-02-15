@@ -8,24 +8,30 @@ Como amante da tecnologia, dou o meu melhor nos estudos, buscando compreender e 
 1. [Sprint 1](Sprint%2001/README.md)  
    
     Nesta primeira sprint foram concluídos os cursos abaixo:  
-      - [x] Linux para Desenvolvedores (c/ terminal, Shell, Apache e +);
-      - [x] Git e GitHub do básico ao avançado.  
-  
+    - [x] Linux para Desenvolvedores (c/ terminal, Shell, Apache e +);
+    - [x] Git e GitHub do básico ao avançado.  
+
 2. [Sprint 2](Sprint%2002/README.md)  
-   
+
     Conclusão dos cursos e resolução de exercícios dos materiais descritos abaixo:
     - [x] Big Data Fundamentos 3.0;
     - [x] SQL para Análise de Dados: do básico ao avançado. 
 
 3. [Sprint 3](Sprint%2003/README.md)   
     - [x] Estudos em Python, do básico ao avançado
-  
+
 4. [Sprint 4](Sprint%2004/README.md) 
     - [x] Programação funcional com Python
     - [x] Estatística descritiva com Python
     - [x] Docker para Desenvolvedores (*com Docker Swarm e Kubernetes*)
-  
+
 5. [Sprint 5](Sprint%2005/README.md) 
+    - [x] AWS Skill Builder - AWS Partner: Sales Accreditation (Business)
+    - [x] AWS Skill Builder - AWS Cloud Quest: Cloud Practitioner
+    - [x] AWS Skill Builder - AWS Partner: Aspectos econômicos da Cloud
+    - [x] AWS Skill Builder - AWS Partner: Accreditation (Technical) 
+    - [x] AWS Skill Builder - Exam Prep: AWS Certified Cloud Practitioner
+
 6. [Sprint 6](Sprint%2006/README.md) 
 7. [Sprint 7](Sprint%2007/README.md) 
 8. [Sprint 8](Sprint%2008/README.md) 
