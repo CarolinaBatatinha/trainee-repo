@@ -32,10 +32,26 @@ Como amante da tecnologia, dou o meu melhor nos estudos, buscando compreender e 
     - [x] AWS Skill Builder - AWS Partner: Accreditation (Technical) 
     - [x] AWS Skill Builder - Exam Prep: AWS Certified Cloud Practitioner
 
-6. [Sprint 6](Sprint%2006/README.md) 
+6. [Sprint 6](Sprint%2006/README.md)
+    - [x] AWS Skill Builder - Data Analytics Fundamentals (Portuguese)
+    - [x] AWS Skill Builder - AWS Partner: Data Analytics on AWS (Business)
+    - [x] AWS Skill Builder - Introduction to Amazon Kinesis Streams
+    - [x] AWS Skill Builder - Introduction to Amazon Kinesis Analytics
+    - [x] AWS Skill Builder - Introduction to Amazon Elastic MapReduce (EMR) (Portuguese)
+    - [x] AWS Skill Builder - Data Analytics Fundamentals (Portuguese)
+    - [x] AWS Skill Builder - Introduction to Amazon Athena (Portuguese)
+    - [x] AWS Skill Builder - Introduction to Amazon Quicksight (Portuguese)
+    - [x] AWS Skill Builder - Introduction to AWS IoT Analytics
+    - [x] AWS Skill Builder - Getting Started with Amazon Redshift
+    - [x] AWS Skill Builder - Deep Dive into Concepts and Tools for Analyzing Streaming Data (Portuguese)
+    - [x] AWS Skill Builder - Best Practices for Data Warehousing with Amazon Redshift (Portuguese)
+    - [x] AWS Skill Builder - Serverless Analytics (Portuguese)
+    - [x] AWS Skill Builder - Why Analytics for Games (Portuguese)
+ 
+
 7. [Sprint 7](Sprint%2007/README.md) 
 8. [Sprint 8](Sprint%2008/README.md) 
-9.  [Sprint 9](Sprint%2009/README.md) 
+9. [Sprint 9](Sprint%2009/README.md) 
 10. [Sprint 10](Sprint%2010/README.md)  
 11. [Cursos extras](Cursos%20Extras/README.md)
 
