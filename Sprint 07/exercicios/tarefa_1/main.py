@@ -22,19 +22,14 @@ print(f"Média da coluna 'Number of Movies': {media_numero_filmes:.2f}")
 
 # 3 - Apresente o nome do ator/atriz com a maior média por número de filmes.
 
-# Encontrar o ator/atriz com a maior média
 ator_maior_media = df.loc[df['Average per Movie'].idxmax()]['Actor']
 maior_media_por_filme = df['Average per Movie'].max()
 
-# Exibir o resultado
 print(f"Ator/atrizes com a maior média por filme: {ator_maior_media} com média de {maior_media_por_filme:.2f}")
 
 # 4 - Apresente o nome do(s) filme(s) mais frequente(s) e sua respectiva frequência.
 
-# Encontrar o(s) filme(s) mais frequente(s) e sua respectiva frequência
 filme_mais_frequente = df['#1 Movie'].mode()
 frequencia_filme_mais_frequente = df['#1 Movie'].value_counts().max()
 
 print(f"Filme(s) mais frequente(s): {', '.join(filme_mais_frequente)} com frequência de {frequencia_filme_mais_frequente} vez(es)")
-
-
