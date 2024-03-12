@@ -181,3 +181,34 @@ df.persist(storageLevel=pyspark.StorageLevel.MEMORY_AND_DISK)
 ```
 Esses conceitos são cruciais para otimizar o desempenho e a eficiência do processamento de dados no Spark, especialmente ao lidar com grandes conjuntos de dados distribuídos. O particionamento e o bucketing auxiliam na organização eficiente dos dados, enquanto o cache e a persistência ajudam a minimizar a recomputação e melhorar o acesso rápido aos dados armazenados.
 
+# Apache Hadoop
+
+O **Apache Hadoop** é um framework de software de código aberto projetado para armazenar e processar grandes conjuntos de dados em clusters distribuídos. Foi desenvolvido para lidar com grandes volumes de dados de maneira escalável e confiável, oferecendo uma solução eficaz para lidar com o processamento de dados em ambientes distribuídos.
+
+Os principais componentes do **Apache Hadoop** são:
+
+**1. Hadoop Distributed File System (HDFS):** é um sistema de arquivos distribuído projetado para armazenar grandes volumes de dados de forma distribuída em vários nós em um cluster. Ele divide os dados em blocos e replica esses blocos em diferentes nós para garantir tolerância a falhas e alta disponibilidade.
+
+**2. MapReduce:** o MapReduce é um modelo de programação e processamento de dados distribuídos, popularizado pelo framework Hadoop. Ele é projetado para lidar com grandes conjuntos de dados em clusters de computadores distribuídos. O MapReduce divide uma tarefa em duas fases principais: a fase de Map e a fase de Reduce.
+
+Uma explicação simplificada do processo MapReduce no contexto do Hadoop a seguir:
+
+*2.1. Fase de Map:*
+
+- **Input Split**: A entrada de dados é dividida em partes chamadas "splits", e cada split é atribuído a um nó do cluster para processamento.
+- **Map Function**: Uma função de mapeamento é aplicada a cada split de dados. Essa função produz uma lista de pares chave-valor (key-value), onde a chave identifica o dado e o valor contém a informação relevante.
+
+*2.2. Shuffling e Sorting:*
+Os pares chave-valor gerados na fase de Map são agrupados com base na chave e transferidos para os nós de redução correspondentes. Durante essa transferência, os dados são ordenados para que todos os pares com a mesma chave fiquem juntos.
+
+*2.3. Fase de Reduce:*
+
+- **Reduce Function:** Cada nó de redução executa uma função de redução que processa os dados agrupados. Essa função pode realizar operações como filtragem, agregação, ou qualquer lógica de processamento necessário. O resultado final da fase de redução é a produção de um conjunto menor de pares chave-valor, representando o resultado final do processamento.
+
+*2.4. Output Final:* os resultados finais dos nós de redução são consolidados para formar a saída final do processo MapReduce.
+
+A principal ideia por trás do MapReduce é a capacidade de processar grandes volumes de dados de maneira paralela e distribuída, aproveitando os recursos de vários nós em um cluster. O Hadoop é um framework de código aberto que implementa o modelo MapReduce e fornece um ambiente escalável para o processamento de dados em larga escala.
+
+**3. YARN (*Yet Another Resource Negotiator*):** Anteriormente, o **Hadoop** utilizava o **MapReduce** como gerenciador de recursos e escalonador, mas o YARN foi introduzido para fornecer uma camada mais flexível e geral para o gerenciamento de recursos no cluster, permitindo a execução de aplicativos não baseados em MapReduce.
+
+O **Apache Hadoop** é amplamente utilizado em ambientes corporativos para lidar com grandes volumes de dados, especialmente em cenários de análise de dados e aprendizado de máquina distribuído. No entanto, vale a pena notar que, com o tempo, outros frameworks e tecnologias, como **Apache Spark**, têm ganhado popularidade devido a melhorias em desempenho e flexibilidade.
