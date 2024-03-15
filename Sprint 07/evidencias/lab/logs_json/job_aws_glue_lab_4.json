@@ -1,0 +1,51 @@
+{
+	"jobConfig": {
+		"name": "job_aws_glue_lab_4",
+		"description": "",
+		"role": "arn:aws:iam::851725196885:role/AWSGlueServiceRole-Lab4",
+		"command": "glueetl",
+		"version": "3.0",
+		"runtime": null,
+		"workerType": "G.1X",
+		"numberOfWorkers": 2,
+		"maxCapacity": 2,
+		"maxRetries": 0,
+		"timeout": 5,
+		"maxConcurrentRuns": 1,
+		"security": "none",
+		"scriptName": "job_aws_glue_lab_4.py",
+		"scriptLocation": "s3://aws-glue-assets-851725196885-us-east-1/scripts/",
+		"language": "python-3",
+		"spark": false,
+		"sparkConfiguration": "standard",
+		"jobParameters": [
+			{
+				"key": "--S3_INPUT_PATH",
+				"value": "s3://lab-glue-carolina/lab-glue/input/",
+				"existing": false
+			},
+			{
+				"key": "--S3_TARGET_PATH",
+				"value": "s3://lab-glue-carolina/lab-glue/input/",
+				"existing": false
+			}
+		],
+		"tags": [],
+		"jobMode": "DEVELOPER_MODE",
+		"createdOn": "2024-03-14T14:35:41.387Z",
+		"developerMode": true,
+		"connectionsList": [],
+		"temporaryDirectory": "s3://aws-glue-assets-851725196885-us-east-1/temporary/",
+		"logging": true,
+		"glueHiveMetastore": true,
+		"etlAutoTuning": true,
+		"metrics": true,
+		"observabilityMetrics": true,
+		"bookmark": "job-bookmark-disable",
+		"sparkPath": "s3://aws-glue-assets-851725196885-us-east-1/sparkHistoryLogs/",
+		"flexExecution": false,
+		"minFlexWorkers": null
+	},
+	"hasBeenSaved": false,
+	"script": "import sys\r\nfrom awsglue.transforms import *\r\nfrom awsglue.utils import getResolvedOptions\r\nfrom pyspark.context import SparkContext\r\nfrom awsglue.context import GlueContext\r\nfrom pyspark.sql import SparkSession\r\nfrom pyspark.sql.functions import col, count, desc\r\n\r\n# Inicializa o contexto do Spark\r\nsc = SparkContext()\r\nglueContext = GlueContext(sc)\r\nspark = glueContext.spark_session\r\n\r\n# Parâmetros\r\nargs = getResolvedOptions(sys.argv, ['JOB_NAME'])\r\n\r\n# Lê o arquivo CSV do S3\r\ndf = spark.read.csv(\"s3://lab-glue-carolina/lab-glue/input/nomes.csv\", header=True, inferSchema=True)\r\n\r\n# Imprime o schema\r\nprint(\"Schema do DataFrame:\")\r\ndf.printSchema()\r\n\r\n# Altera a caixa dos valores da coluna nome para maiúsculo\r\ndf = df.withColumn(\"nome\", col(\"nome\").upper())\r\n\r\n# Imprime contagem de linhas\r\nprint(\"Contagem de Linhas no DataFrame:\", df.count())\r\n\r\n# Contagem de nomes por ano e sexo\r\ncontagem_nomes = df.groupBy(\"ano\", \"sexo\").agg(count(\"*\").alias(\"total_registros\"))\r\ncontagem_nomes = contagem_nomes.orderBy(\"ano\", ascending=True)\r\n\r\n# Nome feminino com mais registros\r\nmais_registros_feminino = df.filter(df.sexo == \"F\").groupBy(\"nome\", \"ano\").agg(count(\"*\").alias(\"total_registros\")).orderBy(desc(\"total_registros\")).first()\r\n\r\n# Nome masculino com mais registros\r\nmais_registros_masculino = df.filter(df.sexo == \"M\").groupBy(\"nome\", \"ano\").agg(count(\"*\").alias(\"total_registros\")).orderBy(desc(\"total_registros\")).first()\r\n\r\n# Total de registros por ano\r\ntotal_registros_por_ano = df.groupBy(\"ano\").agg(count(\"*\").alias(\"total_registros_por_ano\")).orderBy(\"ano\", ascending=True)\r\n\r\n# Imprime as primeiras 10 linhas ordenadas pelo ano\r\nprint(\"Primeiras 10 linhas ordenadas pelo ano:\")\r\ndf.orderBy(\"ano\").show(10)\r\n\r\n# Escreve o conteúdo do DataFrame com os valores de nome em maiúsculo no S3\r\ndf.write.partitionBy(\"sexo\", \"ano\").json(\"s3://lab-glue-carolina/lab-glue/frequencia_registro_nomes_eua/\")\r\n\r\n# Imprime resultados adicionais\r\nprint(\"Nome feminino com mais registros:\", mais_registros_feminino.nome, \"em\", mais_registros_feminino.ano, \"com\", mais_registros_feminino.total_registros, \"registros\")\r\nprint(\"Nome masculino com mais registros:\", mais_registros_masculino.nome, \"em\", mais_registros_masculino.ano, \"com\", mais_registros_masculino.total_registros, \"registros\")\r\nprint(\"Total de registros (masculinos e femininos) para cada ano:\")\r\ntotal_registros_por_ano.show()\r\n\r\n# Finaliza o job\r\njob.commit()"
+}
