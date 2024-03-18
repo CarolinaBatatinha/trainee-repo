@@ -47,11 +47,13 @@ Como amante da tecnologia, dou o meu melhor nos estudos, buscando compreender e 
     - [x] AWS Skill Builder - Best Practices for Data Warehousing with Amazon Redshift (Portuguese)
     - [x] AWS Skill Builder - Serverless Analytics (Portuguese)
     - [x] AWS Skill Builder - Why Analytics for Games (Portuguese)
- 
 
 7. [Sprint 7](Sprint%2007/README.md) 
+    - [x] Learn by Example: Hadoop, MapReduce for Big Data problems
+    - [x] Formação Spark com Pyspark: o Curso Completo    
+  
 8. [Sprint 8](Sprint%2008/README.md) 
-9. [Sprint 9](Sprint%2009/README.md) 
+9.  [Sprint 9](Sprint%2009/README.md) 
 10. [Sprint 10](Sprint%2010/README.md)  
 11. [Cursos extras](Cursos%20Extras/README.md)
 
