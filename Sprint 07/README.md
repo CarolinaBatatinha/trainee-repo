@@ -1,4 +1,4 @@
-# Sprint 7
+# Relatório da Sprint 7
 
 A Sprint 7 trouxe conceitos sobre o **PySpark** e o **Apache Hadoop**, dando continuidade à trilha de aprendizado.
 
