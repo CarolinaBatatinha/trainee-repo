@@ -1,4 +1,3 @@
-
 # 3) [Laboratório] Elaborar um código Python para gerar um dataset de nomes de pessoas. 
 
 import random

@@ -2,7 +2,7 @@
 
 import csv
 
-animais = ['cachorro', 'gato', 'cavalo', 'coelho', 'abelha', 'tubarão', 'gorila', 'águia', 'capivara', 'baleia', 'arara', 'vaca', 'cabra', 'porco', 'leão', 'girafa', 'rinoceronte', 'pato', 'carneiro', 'tamanduá']
+animais = ['cachorro', 'gato', 'cavalo', 'coelho', 'abelha', 'tubarão', 'gorila', 'esquilo', 'capivara', 'baleia', 'arara', 'vaca', 'cabra', 'porco', 'leão', 'girafa', 'rinoceronte', 'pato', 'carneiro', 'tamanduá']
 
 animais_ordenados = sorted(animais)
 
