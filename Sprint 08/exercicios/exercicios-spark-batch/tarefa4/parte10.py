@@ -31,7 +31,6 @@ df_nomes = df_nomes_com_pais.withColumn('AnoNascimento', (F.rand() * (2010 - 194
 # 10) 
 df_nomes.createOrReplaceTempView("pessoas")
 
-
 query_baby_boomers = """
     SELECT Pais, COUNT(*) AS Quantidade, 'Baby Boomers' AS Geracao
     FROM pessoas

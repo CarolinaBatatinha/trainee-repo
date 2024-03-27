@@ -50,9 +50,13 @@ Como amante da tecnologia, dou o meu melhor nos estudos, buscando compreender e 
 
 7. [Sprint 7](Sprint%2007/README.md) 
     - [x] Learn by Example: Hadoop, MapReduce for Big Data problems
-    - [x] Formação Spark com Pyspark: o Curso Completo    
+    - [x] Formação Spark com Pyspark: o Curso Completo 
+    - [x] Desafio - Projeto Final - parte 1    
   
 8. [Sprint 8](Sprint%2008/README.md) 
+    - [x] Resolução de exercícios de Pyspark
+    - [x] Desafio - Projeto Final - parte 2      
+  
 9.  [Sprint 9](Sprint%2009/README.md) 
 10. [Sprint 10](Sprint%2010/README.md)  
 11. [Cursos extras](Cursos%20Extras/README.md)

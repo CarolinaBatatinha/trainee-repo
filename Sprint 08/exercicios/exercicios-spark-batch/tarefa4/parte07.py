@@ -29,7 +29,6 @@ df_nomes_com_pais = df_nomes.withColumn("Pais",
 df_nomes = df_nomes_com_pais.withColumn('AnoNascimento', (F.rand() * (2010 - 1945) +1945).cast('int'))
 
 df_select = df_nomes.filter(F.col('AnoNascimento') >= 2000)
-df_select.show(10)
 
 # 7)
 
