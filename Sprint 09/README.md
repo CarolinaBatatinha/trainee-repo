@@ -1,0 +1,1 @@
+A Sprint 9 traz como objetivos o aprofundamento de modelagem de dados através das tarefas propostas ([tarefa 1](tarefas/tarefa-1/) e [tarefa 2](tarefas/tarefa-2/)), além da continuação do projeto final (agora focado na carga de dados e sua modelagem), descrita no [desafio 3](exercicios/desafio-3/).
