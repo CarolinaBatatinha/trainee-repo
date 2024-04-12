@@ -58,6 +58,9 @@ Como amante da tecnologia, dou o meu melhor nos estudos, buscando compreender e 
     - [x] Desafio - Projeto Final - parte 2      
   
 9.  [Sprint 9](Sprint%2009/README.md) 
+    - [x] Resolução de exercícios de modelagem de dados
+    - [x] Desafio - Projeto Final - parte 3
+    
 10. [Sprint 10](Sprint%2010/README.md)  
 11. [Cursos extras](Cursos%20Extras/README.md)
 
