@@ -16,7 +16,7 @@ spark = glueContext.spark_session
 job = Job(glueContext)
 job.init(args['JOB_NAME'], args)
 
-df = spark.read.format("json").load("s3://desafio-1-carolina/desafio-1-carolina/Raw/Local/CSV/100_records/2024/03/28/tmdb_data_1.json")
+df = spark.read.format("json").load("s3://desafio-batatinha/Raw/Local/TMDB/json/2024/04/15/tmdb_data.json")
 
 df.printSchema()
 df.show()
@@ -24,17 +24,16 @@ df.show()
 read_df = df.withColumn("explode", expr("explode_outer(filmes)"))
 
 processed_data = read_df.select(
-    col("id"),
-    col("Titulo"),
-    col("Data de Lançamento"),
-    col("Sinopse"),
-    col("Votos"),
-    col("Média de votos"),
-    col("ID de gênero"),
-    col("Filme adulto"),
-    col("Poster"),
-    col("Orçamento")
+    col("explode.idFilme"),
+    col("explode.Titulo"),
+    col("explode.DataDeLancamento"),
+    col("explode.Sinopse"),
+    col("explode.Votos"),
+    col("explode.MediaDeVotos"),
+    col("explode.FilmeAdulto"),
+    col("explode.Poster"),
+    col("explode.Orcamento_US")
 )
 
-processed_data.write.parquet("s3://desafio-1-carolina/Raw/DadosProcessados/TrustedTMDB/processed")
+processed_data.write.parquet("s3://desafio-batatinha/Trusted/TMDB")
 job.commit()

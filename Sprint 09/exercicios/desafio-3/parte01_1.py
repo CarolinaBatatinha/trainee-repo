@@ -13,8 +13,8 @@ spark = glueContext.spark_session
 job = Job(glueContext)
 job.init(args['JOB_NAME'], args)
 
-input_path = "s3://desafio-1-carolina/Raw/Local/Movies/2024/03/18/movies.csv"
-output_path = "s3://desafio-1-carolina/Raw/DadosProcessados"
+input_path = "s3://desafio-batatinha/Raw/Local/CSV/Movies/2024/04/15/movies.csv"
+output_path = "s3://desafio-batatinha/Trusted/CSV/"
 
 df = spark.read.option("delimiter", "|").option("header", "true").csv(input_path)
 
@@ -26,6 +26,8 @@ processed_data = df.select(
     col("genero"),
     col("notaMedia"),
     col("numeroVotos"),
+    col("generoArtista"),
+    col("personagem")
 )
 
 processed_data.write.mode("overwrite").parquet(output_path)

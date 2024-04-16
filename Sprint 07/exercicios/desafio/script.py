@@ -1,19 +1,29 @@
 import boto3
+import os
 from datetime import datetime
 
-s3 = boto3.client('s3', 
-aws_access_key_id='ASIA4MTWHDZKY3MLDPEX', 
-aws_secret_access_key='yR0MT7LjGfm1qnznezgjcSRzHdQzRG5zdH/70s2L',
-aws_session_token='IQoJb3JpZ2luX2VjENT//////////wEaCXVzLWVhc3QtMSJHMEUCIQCAur01M2Rd9WbC5wRuezbOB/3Kgxae86U61Ql89jlPggIgT8wsnL3Gkvlt3KPQXgSWPtMlNgNYxL7HlOzjgJ0w7eQqqgMI3f//////////ARAAGgw4NTE3MjUxOTY4ODUiDDwTs8Ow3hqRXI3Zfyr+AoXt+eoBhx3cA998W+ImomKUi1MePA7Pd1iirMmnFkkZXz1rLIsg9xlzYNGRVeX5/4Dg3mVtbvE/OnHz5djVS9w8ZZCkYGx/l1Dnyd3bem6nyfIPSZsPsnPlv/LTo9PDNqhUMfWi4DpFb2D1uRQHl0x8PuJM2l1gESsHF+omYMnjh3bujfhri5FcWOXLQJT+mI0TGM+p6s7OotBgsn9x57LxkY8a5uuYhICrJ0nlI6958aNnj51ie5m6sXJxVjyagJmssUvOxkDazf20OhWndpxALEBOhCGRbPodvijuzDavCnVObmpJgdR8iN+kM+BxlXQqRkmbYtGjpRgSpJMUDGFv5YVUCyZvmalNa8JPx8+6hiSLpcA+yiL8dKnJoHeqTNrymKw+tBCDoMfNMNaWzwAMRdXwfSrVizUaPLNNMTvAhtkZFE4V4/DjnFRLjgEh76NURwy+o+XssGkNJMnPC2DjGT7yVNH007ucoRlKEGU//2BvMd12ACQpo50MGf8w+qzirwY6pgE7w0Dgj8XdY8YBAoK6UtYDo19VsrPn+fTHov1Vx4KziTJXnwujyjvHj7ZXNC6v4woQnv4pz3Sx+bizE/uA+FVRbefo2yZNwFe/fgAThYFBq1wJhqrG1xfYtBaoGFcbWhSw6JIlEkF7qKov+w5Uc8iOkCtwI5DYO/nb41PioOAqtf2eCWGq+cRu7k1Bl1ufUnZWvp+zs4Ea6Q9FEX09wgUMex6FVNhl')
+data = datetime.now().strftime('%Y/%m/%d')
 
-bucket_name = 'desafio-1-carolina'
-storage_layer = 'Raw'
-data_origin = 'Local'
-data_format = 'CSV'
-processing_date = datetime.now().strftime('%Y/%m/%d')
 
-s3.upload_file('/app/movies.csv', 'desafio-1-carolina','Raw/Local/Movies/2024/03/18/movies.csv')
+def upload_arquivo(arquivo, raw, local, formato, especificacao, data):
+    s3 = boto3.client('s3', region_name='us-east-1', aws_access_key_id="ASIA4MTWHDZK3AWW2CED",
+                    aws_secret_access_key="Z92dhqcsAB16gR9bs9xPtXpmb4QsvW1xjp2fx1IO", 
+                    aws_session_token="IQoJb3JpZ2luX2VjEHMaCXVzLWVhc3QtMSJHMEUCIQDSUg8h2Wt0Lnv/oOvf3/5Ea9+Z1jU3zQHxBMoJU8A28AIgcu5Q4r735raerJwab3SZfNK5ZEqefkJkXMRn/7XKoQEqqgMIrP//////////ARAAGgw4NTE3MjUxOTY4ODUiDLDOsUa36TvHoUQ9jCr+AgE3kDKNObkskmTUJHrzHggUK3rP/LN8oJIW68ugRFGM46ZvZn8jp+9bLLXRQD8jnzWhjviIkI/PdRXec7sjcfoZaTJmxE9U2URutYvnbYRmTHIQwQJXN7AhFfTWwak9uF/63nmoE/iwHN5g5SvNvdxNPkn825+WC3nPkkl0cjUpvIRzsJxRWjlvI2g03StSHhFEfi6sDw/KSI0wQTinkausE6kTfGZGukmGvY/hnV/z60OGAGFBPPf3aAKWtnl8eOmpOxgx/cbNcT1u9QQE80AICOPz8lM2RCB8lrnloyd8pK8z1JMixsaMu4qWdKe+UAdSk9tLRHxo8XKf5iSEO7NPESt3YHzz4OddmTNs1WikY62v+iqXzOJj0wOXmRGXp0gpYg0gmxpr445X3NJl8JMxVavPunKkplA8ivPTR69VHQtTQ8BCOZiOPLTZ2XhSACdfsCtgKYatC6DYe50nk7tu9/UdDRqYS+le5XvbDw2a9bGibFxwtHRdAErWXJUw6uL1sAY6pgGKlHw/a0TveI5mB6Aq7WoiXrkEzU+ZC7K4v7hyMF1K+0PV9tqihd2vhTyv6mX20A/JvIYtr42GXWAIHPtP1AHlU0mRxDWF4S5Rxw502NlllrsiDqgQygnDnyrdHR3Pks1I6ed2fZ7haeOr3EAtDm2ngAM9kCu07TX4mCSDGfBJd3ayH4Ln0Ebyzy1r+wmoWcnX+umVNeu9VKgRlRHo0lr+0fE6JsTb")
 
-s3.upload_file('/app/series.csv', 'desafio-1-carolina','Raw/Local/Series/2024/03/18/series.csv')
+    key = f'{raw}/{local}/{formato}/{especificacao}/{data}/{os.path.basename(arquivo)}'
 
-print("Dados carregados com sucesso para o S3 no bucket desafio-1-carolina!")
+    try:
+        s3.upload_file(arquivo, 'desafio-batatinha', key)
+        print(f'Arquivo {os.path.basename(arquivo)} enviado para o bucket com sucesso!')
+    except Exception as e:
+        print(f'Arquivo {os.path.basename(arquivo)} não enviado para o bucket: {e}')
+
+
+def main():
+    movies_path = './movies.csv'
+    series_path = './series.csv'
+    upload_arquivo(movies_path, 'Raw', 'Local', 'CSV', 'Movies', data)
+    upload_arquivo(series_path, 'Raw', 'Local', 'CSV', 'Series', data)
+
+if __name__ == "__main__":
+    main()
