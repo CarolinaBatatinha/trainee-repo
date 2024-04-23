@@ -63,6 +63,7 @@ Como amante da tecnologia, dou o meu melhor nos estudos, buscando compreender e 
     
 10. [Sprint 10](Sprint%2010/README.md)
     - [x] Complete Introduction to AWS QuickSight
-    - [x] Desafio - Projeto Final - parte 4 
+    - [x] Desafio - parte 4 
+    - [x] Desafio final
     
 11. [Cursos extras](Cursos%20Extras/README.md)

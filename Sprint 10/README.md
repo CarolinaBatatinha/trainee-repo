@@ -1,4 +1,4 @@
-Nessa última sprint, estudamos os fundamentos do **Amazon QuickSight** no curso "***Complete Introduction to AWS QuickSight***", além de concluirmos o desafio final.
+Nessa última sprint, estudamos os fundamentos do **Amazon QuickSight** no curso "***Complete Introduction to AWS QuickSight***", além de concluirmos o desafio 4, completando o desafio final.
 
 ## **Amazon QuickSight**
 
@@ -10,7 +10,7 @@ O ***Amazon QuickSight*** é introduzido como  um serviço de *business intellig
 
 3. **Análise de autoatendimento**: Os usuários podem explorar os dados de forma independente, criar análises *ad-hoc* e responder a perguntas em tempo real usando recursos como filtros interativos, *drill-downs* e análises de séries temporais.
 
-4. **Integração com serviços da AWS**: O *QuickSight* se integra perfeitamente com outros serviços da **AWS**, como *Amazon S3*, *Amazon Athena*, *Amazon Redshift*, *Amazon RDS*, entre outros, facilitando a análise de dados armazenados em diferentes serviços da AWS.
+4. **Integração com serviços da AWS**: O *QuickSight* se integra perfeitamente com outros serviços da **AWS**, como *Amazon S3*, *Amazon Athena*, *Amazon Redshift*, *Amazon RDS*, entre outros, facilitando a análise de dados armazenados em diferentes serviços da **AWS**.
 
 5. **Escalabilidade e desempenho**: Como um serviço totalmente gerenciado, o *QuickSight* oferece escalabilidade automática para lidar com conjuntos de dados de qualquer tamanho, além de oferecer alto desempenho para consultas e visualizações de dados.
 
@@ -20,12 +20,16 @@ O ***Amazon QuickSight*** é introduzido como  um serviço de *business intellig
 
 Resumindo, o **Amazon QuickSight** oferece uma solução completa e poderosa para análise de dados, permitindo que as organizações extraiam insights valiosos de seus dados de maneira rápida e eficiente.
 
+## Desafio 4
+
+O [desafio 4](desafio/analise_carolina.sou_2024-04-23T16_35_46.pdf) teve como objetivo analisar os dados dos **filmes** enquadrados no gênero **crime** que foram dirigidos por **Martin Scorsese** e estrelados por **Robert de Niro**, levando em consideração o ano de lançamento, o orçamento, a popularidade dos títulos, a  contagem dos votos e sua avaliação média dentro da **API** do **TMDB**, fazendo uso da ***AWS QuickSight***. Para tanto, foi requerido o consumo e a apresentação dos dados coletados a partir dos arquivos da pasta Refined, disponível no bucket desse desafio.
+
+
 ## **Desafio Final**
 
-Dentro do desafio final do Programa de Bolsas serão analisados os dados dos **filmes** enquadrados no gênero **crime** que foram dirigidos por **Martin Scorsese** e estrelados por **Robert de Niro**, levando em consideração o ano de lançamento, o orçamento e sua nota média dentro do **TMDB**.
+O [desafio final]() do Programa de Bolsas propôs para a Squad 2 uma análise dos dados de **filmes** ou séries enquadrados no gênero **crime**. Dentre as etapas percorridas, é possível mencionar o envio de arquivos .csv para o bucket destinado a armazenar os registros da tarefa, a aquisição de dados oriundos da API do site do [TMDB](https://www.themoviedb.org/?language=pt-BR), e sua passagem pelas pastas *Trusted* e *Refined*, a modelagem desses dados e, por fim, a visualização dos *insights* desses dados refinados.
 
 ## **Certificados**
 
 * Complete Introduction to AWS QuickSight  
 ![Complete Introduction to AWS QuickSight](certificados/Complete_introduction_to_AWS_QuickSight.jpg)
-
