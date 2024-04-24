@@ -28,7 +28,7 @@ processed_data = exploded_df.select(
     col("explode.release_date").alias("lancamento"),
     col("explode.vote_count").alias("contagemVotos"),
     col("explode.vote_average").alias("mediaVotos"),
-    col("explode.popularity").alias("Popularidade"),
+    col("explode.popularity"),
     col("explode.budget").alias("orcamento")
 )
 
