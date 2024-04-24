@@ -22,7 +22,7 @@ Resumindo, o **Amazon QuickSight** oferece uma solução completa e poderosa par
 
 ## Desafio 4
 
-O [desafio 4](desafio/analise_carolina.sou_2024-04-23T16_35_46.pdf) teve como objetivo analisar os dados dos **filmes** enquadrados no gênero **crime** que foram dirigidos por **Martin Scorsese** e estrelados por **Robert de Niro**, levando em consideração o ano de lançamento, o orçamento, a popularidade dos títulos, a  contagem dos votos e sua avaliação média dentro da **API** do **TMDB**, fazendo uso da ***AWS QuickSight***. Para tanto, foi requerido o consumo e a apresentação dos dados coletados a partir dos arquivos da pasta Refined, disponível no bucket desse desafio.
+O [desafio 4](desafio/analise_carolina.sou_2024-04-23T19_51_21.pdf) teve como objetivo analisar os dados dos **filmes** enquadrados no gênero **crime** que foram dirigidos por **Martin Scorsese** e estrelados por **Robert de Niro**, levando em consideração o ano de lançamento, o orçamento, a popularidade dos títulos, a  contagem dos votos e sua avaliação média dentro da **API** do **TMDB**, fazendo uso da ***AWS QuickSight***. Para tanto, foi requerido o consumo e a apresentação dos dados coletados a partir dos arquivos da pasta *Refined*, disponível no bucket desse desafio.
 
 
 ## **Desafio Final**
