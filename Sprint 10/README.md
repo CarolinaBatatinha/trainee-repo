@@ -22,12 +22,14 @@ Resumindo, o **Amazon QuickSight** oferece uma solução completa e poderosa par
 
 ## Desafio 4
 
-O [desafio 4](desafio/analise_carolina.sou_2024-04-23T19_51_21.pdf) teve como objetivo analisar os dados dos **filmes** enquadrados no gênero **crime** que foram dirigidos por **Martin Scorsese** e estrelados por **Robert de Niro**, levando em consideração o ano de lançamento, o orçamento, a popularidade dos títulos, a  contagem dos votos e sua avaliação média dentro da **API** do **TMDB**, fazendo uso da ***AWS QuickSight***. Para tanto, foi requerido o consumo e a apresentação dos dados coletados a partir dos arquivos da pasta *Refined*, disponível no bucket desse desafio.
+O [desafio 4](desafio/analise_carolina.sou_2024-04-24T19_44_51.pdf) teve como objetivo analisar os dados dos **filmes** enquadrados no gênero **crime** que foram dirigidos por **Martin Scorsese** e estrelados por **Robert de Niro**, levando em consideração o ano de lançamento, o orçamento, a popularidade dos títulos, a  contagem dos votos e sua avaliação média dentro da **API** do **TMDB**, fazendo uso da ***AWS QuickSight***. Para tanto, foi requerido o consumo e a apresentação dos dados coletados a partir dos arquivos da pasta *Refined*, disponível no bucket desse desafio.
 
 
 ## **Desafio Final**
 
-O [desafio final]() do Programa de Bolsas propôs para a Squad 2 uma análise dos dados de **filmes** ou séries enquadrados no gênero **crime**. Dentre as etapas percorridas, é possível mencionar o envio de arquivos .csv para o bucket destinado a armazenar os registros da tarefa, a aquisição de dados oriundos da API do site do [TMDB](https://www.themoviedb.org/?language=pt-BR), e sua passagem pelas pastas *Trusted* e *Refined*, a modelagem desses dados e, por fim, a visualização dos *insights* desses dados refinados.
+O [desafio final](evidencias/desafio-final/) do Programa de Bolsas propôs para a Squad 2 uma análise dos dados de **filmes** ou séries enquadrados no gênero **crime**. Dentre as etapas percorridas, é possível mencionar o envio de arquivos .csv para o bucket destinado a armazenar os registros da tarefa, a aquisição de dados oriundos da API do site do [TMDB](https://www.themoviedb.org/?language=pt-BR), e sua passagem pelas pastas *Trusted* e *Refined*, a modelagem desses dados e, por fim, a visualização dos *insights* desses dados refinados.
+
+Todos os scripts usados na conclusão do desafio estão disponíveis na pasta [compilado-scripts](evidencias/desafio-final/compilado-scripts/).
 
 ## **Certificados**
 
